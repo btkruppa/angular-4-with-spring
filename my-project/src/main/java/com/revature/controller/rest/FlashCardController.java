@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.revature.entities.FlashCard;
 import com.revature.service.FlashCardService;
 
+/**
+ * A Rest Controller for receiving all requests dealing with flashcards
+ * 
+ * @author Blake
+ *
+ */
 @RestController
 @RequestMapping("flashcards")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -19,6 +25,10 @@ public class FlashCardController {
 	@Autowired
 	private FlashCardService flashService;
 
+	/**
+	 * 
+	 * @return A list containing every {@link FlashCard}
+	 */
 	@GetMapping
 	public List<FlashCard> findAll() {
 		return flashService.getAll();
