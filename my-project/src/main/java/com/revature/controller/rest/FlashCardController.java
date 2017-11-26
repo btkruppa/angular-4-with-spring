@@ -22,6 +22,7 @@ import com.revature.service.FlashCardService;
 @CrossOrigin(origins = "http://localhost:4200")
 public class FlashCardController {
 
+	
 	@Autowired
 	private FlashCardService flashService;
 
