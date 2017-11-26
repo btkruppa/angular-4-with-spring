@@ -34,4 +34,9 @@ public class FlashCardController {
 		return flashService.getAll();
 	}
 
+	@GetMapping("test")
+	public String test() {
+		return "this is a test";
+	}
+
 }
